@@ -5,7 +5,7 @@ const Intern = require('./lib/intern')
 const Engineer = require('./lib/engineer')
 const Employee = require('./lib/employee');
 
-const questions =['What is team member name','Select team member role','Enter team member id','Enter email address','Enter the manger office number','Enter the name of the school','Enter github username']
+const questions =['What is team member name','Select team member role','Enter team member id','Enter email address','Enter the manger office number','Enter the name of the school','Enter github username','Would you like to add more team members?']
 init();
 function writeToFile(data){
 
@@ -66,9 +66,32 @@ else{
         message: messageVar,
         name: 'id',
         validate :(value) => {if(value) return true; else return `Please enter team member's ${validateText}` }
+      },
+      {
+        type: 'list',
+        message: questions[7],
+        name: 'proceed',
+        choices:['Yes','No'],
+        validate :(value) => {if(value) return true; else return `Please choose from the list` }
       }
     ])
+    .then(function(response){
+        console.log(response.proceed)
+if(response.proceed == 'Yes')
+{
 
+    init();
+}
+else{
+    generateHTML();
+}
 
     })
+
+    })
+}
+
+function generateHTML(){
+
+
 }
