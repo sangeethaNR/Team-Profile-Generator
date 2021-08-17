@@ -4,14 +4,14 @@ const Manager = require('./lib/manager');
 const Intern = require('./lib/intern')
 const Engineer = require('./lib/engineer')
 const Employee = require('./lib/employee');
-const teamMemebers= [];
-let htmlDiv='';
+
+
 const questions =["What is team manager's name?","What is team manager's id?","What is team manager's email?",
 "What is team manager's office number?","Which type  of team member you like to add?","What is your engineer's name?",
 "What is your engineer's id?","What is your engineer's email?","What is your engineer's Github username?",
 "What is intern's name?","What is intern's id?","What is intern's email?","What is intern's school?"]
 straterHtml();
-//init();
+
 
 function straterHtml()
 {
@@ -56,10 +56,7 @@ else{
 });
   });
 }
-function writeToFile(data){
 
-
-}
 
 function init()
 {
