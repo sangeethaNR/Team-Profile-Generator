@@ -3,7 +3,7 @@
  ## Description
  In this project,takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable,this project includes TDD for all the class.
   The ScreenShot of the app given below
- ![Scrrenshot of ReadMe Generator](assets/gif&video/ReadMe.gif)
+ ![Screenshot of Team profile  Generator](src/images/ScreenShot.png)
   ## Technologies Used
  node.js
 Bootstrap
@@ -48,6 +48,7 @@ You installed the project to your local!!!
 
 Link to the deployed application https://github.com/sangeethaNR/Team-Profile-Generator.git
  
+ Landing Page  https://github.com/sangeethaNR/Team-Profile-Generator/
  Upon Installation to run this app
 
  Open integrated Terminal 
