@@ -48,7 +48,6 @@ You installed the project to your local!!!
 
 Link to the deployed application https://github.com/sangeethaNR/Team-Profile-Generator.git
  
- Landing Page  https://github.com/sangeethaNR/Team-Profile-Generator/
  Upon Installation to run this app
 
  Open integrated Terminal 

@@ -102,9 +102,7 @@ function init()
     
        const managerObj = new Manager(response.managerName,response.managerId,response.managerEmail,response.managerOfficeNumber);
        generateHTML(managerObj);
-     for(i=0;i< teamMemebers.length;i++){
-      console.log(teamMemebers[i]) 
-     }
+     
       
 if( response.moreTeamMemebers == 'Intern'){
  addIntern(response);
@@ -122,7 +120,7 @@ else{
 
 function generateHTML(teamMemObj){
   return new Promise(function(resolve, reject) {
-  console.log("coming")
+ 
   
   const name = teamMemObj.getName();
   const role = teamMemObj.getRole();
@@ -234,7 +232,7 @@ validate :(value) => {if(value) return true; else return `Please enter intern's 
   // obj.role = 'Intern'
    //obj.value=internObj;
   // obj={role:'Intern',...internObj}
-   teamMemebers.push(obj)
+ 
    generateHTML(internObj)
 if(response.moreTeamMemebers == 'Intern')
 {
@@ -288,9 +286,7 @@ validate :(value) => {if(value) return true; else return `Please enter engineer'
     // obj = {role:'Engineer',...engineerObj}
        
        generateHTML(engineerObj)    //  teamMemebers = {Role : 'Manager', value: managerObj}
-     for(i=0;i< teamMemebers.length;i++){
-      console.log(teamMemebers[i]) 
-     }
+   
   if(response.moreTeamMemebers == 'Intern')
   {
     addIntern(response)
